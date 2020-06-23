@@ -37,7 +37,10 @@
             this.buttonJobs = new System.Windows.Forms.Button();
             this.buttonServices = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -45,7 +48,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 90);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 104);
+            this.pictureBox1.Size = new System.Drawing.Size(284, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -89,7 +92,7 @@
             this.buttonContacts.BackColor = System.Drawing.Color.White;
             this.buttonContacts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonContacts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.buttonContacts.Location = new System.Drawing.Point(350, 248);
+            this.buttonContacts.Location = new System.Drawing.Point(413, 159);
             this.buttonContacts.Name = "buttonContacts";
             this.buttonContacts.Size = new System.Drawing.Size(142, 52);
             this.buttonContacts.TabIndex = 4;
@@ -101,7 +104,7 @@
             this.buttonJobs.BackColor = System.Drawing.Color.White;
             this.buttonJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonJobs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.buttonJobs.Location = new System.Drawing.Point(350, 334);
+            this.buttonJobs.Location = new System.Drawing.Point(413, 247);
             this.buttonJobs.Name = "buttonJobs";
             this.buttonJobs.Size = new System.Drawing.Size(142, 55);
             this.buttonJobs.TabIndex = 5;
@@ -113,7 +116,7 @@
             this.buttonServices.BackColor = System.Drawing.Color.White;
             this.buttonServices.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.buttonServices.Location = new System.Drawing.Point(350, 423);
+            this.buttonServices.Location = new System.Drawing.Point(413, 335);
             this.buttonServices.Name = "buttonServices";
             this.buttonServices.Size = new System.Drawing.Size(142, 54);
             this.buttonServices.TabIndex = 6;
@@ -125,15 +128,37 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(553, 74);
+            this.panel1.Size = new System.Drawing.Size(591, 74);
             this.panel1.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(0, 407);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(591, 194);
+            this.panel2.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(31, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(303, 62);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "© 2011-2020, КОГАУ «Многофункциональный центр предоставления государственных и му" +
+    "ниципальных услуг»";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(553, 499);
+            this.ClientSize = new System.Drawing.Size(590, 492);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonServices);
             this.Controls.Add(this.buttonJobs);
@@ -144,7 +169,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormMain";
             this.Text = "Главное меню";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +187,8 @@
         private System.Windows.Forms.Button buttonServices;
         private System.Windows.Forms.Button buttonContacts;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
