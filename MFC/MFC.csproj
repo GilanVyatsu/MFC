@@ -67,11 +67,11 @@
     <Compile Include="FormApplications.Designer.cs">
       <DependentUpon>FormApplications.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormContacts.cs">
+    <Compile Include="FormOkt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormContacts.Designer.cs">
-      <DependentUpon>FormContacts.cs</DependentUpon>
+    <Compile Include="FormOkt.Designer.cs">
+      <DependentUpon>FormOkt.cs</DependentUpon>
     </Compile>
     <Compile Include="FormJobs.cs">
       <SubType>Form</SubType>
@@ -134,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMFC.resx">
       <DependentUpon>FormMFC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOkt.resx">
+      <DependentUpon>FormOkt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

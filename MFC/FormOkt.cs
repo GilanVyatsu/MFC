@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MFC
 {
-    public partial class FormContacts : Form
+    public partial class FormOkt : Form
     {
-        public FormContacts()
+        public FormOkt()
         {
             InitializeComponent();
         }

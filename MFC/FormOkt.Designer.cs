@@ -1,6 +1,6 @@
 ﻿namespace MFC
 {
-    partial class FormContacts
+    partial class FormOkt
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormOkt
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormContacts";
+            this.ClientSize = new System.Drawing.Size(434, 413);
+            this.Name = "FormOkt";
+            this.Text = "МФЦ по Октябрьскому району";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

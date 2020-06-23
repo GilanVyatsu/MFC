@@ -153,6 +153,7 @@
             this.buttonApplications.TabIndex = 9;
             this.buttonApplications.Text = "Заявки";
             this.buttonApplications.UseVisualStyleBackColor = false;
+            this.buttonApplications.Click += new System.EventHandler(this.buttonApplications_Click);
             // 
             // FormMain
             // 

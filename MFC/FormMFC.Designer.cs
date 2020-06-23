@@ -35,23 +35,25 @@
             this.pictureBoxYouTube = new System.Windows.Forms.PictureBox();
             this.pictureBoxInst = new System.Windows.Forms.PictureBox();
             this.pictureBoxVK = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxVremaProstora = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLenin2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLenin = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPerv = new System.Windows.Forms.PictureBox();
+            this.pictureBoxOkt = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxOktLeps = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxYouTube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInst)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVremaProstora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOkt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOktLeps)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxFB
@@ -121,57 +123,57 @@
             this.pictureBoxVK.TabStop = false;
             this.pictureBoxVK.Click += new System.EventHandler(this.pictureBoxVK_Click);
             // 
-            // pictureBox2
+            // pictureBoxVremaProstora
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(131, 298);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxVremaProstora.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxVremaProstora.Image")));
+            this.pictureBoxVremaProstora.Location = new System.Drawing.Point(132, 296);
+            this.pictureBoxVremaProstora.Name = "pictureBoxVremaProstora";
+            this.pictureBoxVremaProstora.Size = new System.Drawing.Size(43, 36);
+            this.pictureBoxVremaProstora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxVremaProstora.TabIndex = 5;
+            this.pictureBoxVremaProstora.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxLenin2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(182, 192);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBoxLenin2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLenin2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLenin2.Image")));
+            this.pictureBoxLenin2.Location = new System.Drawing.Point(182, 192);
+            this.pictureBoxLenin2.Name = "pictureBoxLenin2";
+            this.pictureBoxLenin2.Size = new System.Drawing.Size(43, 36);
+            this.pictureBoxLenin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLenin2.TabIndex = 6;
+            this.pictureBoxLenin2.TabStop = false;
+            this.pictureBoxLenin2.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox4
+            // pictureBoxLenin
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(322, 245);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
+            this.pictureBoxLenin.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLenin.Image")));
+            this.pictureBoxLenin.Location = new System.Drawing.Point(322, 245);
+            this.pictureBoxLenin.Name = "pictureBoxLenin";
+            this.pictureBoxLenin.Size = new System.Drawing.Size(43, 36);
+            this.pictureBoxLenin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLenin.TabIndex = 7;
+            this.pictureBoxLenin.TabStop = false;
             // 
-            // pictureBox5
+            // pictureBoxPerv
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(389, 140);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
+            this.pictureBoxPerv.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPerv.Image")));
+            this.pictureBoxPerv.Location = new System.Drawing.Point(389, 140);
+            this.pictureBoxPerv.Name = "pictureBoxPerv";
+            this.pictureBoxPerv.Size = new System.Drawing.Size(43, 36);
+            this.pictureBoxPerv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPerv.TabIndex = 8;
+            this.pictureBoxPerv.TabStop = false;
             // 
-            // pictureBox6
+            // pictureBoxOkt
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(336, 140);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(43, 36);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
+            this.pictureBoxOkt.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOkt.Image")));
+            this.pictureBoxOkt.Location = new System.Drawing.Point(336, 140);
+            this.pictureBoxOkt.Name = "pictureBoxOkt";
+            this.pictureBoxOkt.Size = new System.Drawing.Size(43, 36);
+            this.pictureBoxOkt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxOkt.TabIndex = 9;
+            this.pictureBoxOkt.TabStop = false;
             // 
             // label1
             // 
@@ -183,18 +185,30 @@
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBoxOktLeps
+            // 
+            this.pictureBoxOktLeps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBoxOktLeps.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOktLeps.Image")));
+            this.pictureBoxOktLeps.Location = new System.Drawing.Point(312, 30);
+            this.pictureBoxOktLeps.Name = "pictureBoxOktLeps";
+            this.pictureBoxOktLeps.Size = new System.Drawing.Size(43, 36);
+            this.pictureBoxOktLeps.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxOktLeps.TabIndex = 15;
+            this.pictureBoxOktLeps.TabStop = false;
+            // 
             // FormMFC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(913, 576);
+            this.Controls.Add(this.pictureBoxOktLeps);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxLenin2);
+            this.Controls.Add(this.pictureBoxOkt);
+            this.Controls.Add(this.pictureBoxPerv);
+            this.Controls.Add(this.pictureBoxLenin);
+            this.Controls.Add(this.pictureBoxVremaProstora);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormMFC";
@@ -205,11 +219,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxYouTube)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInst)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVremaProstora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOkt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOktLeps)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,11 +236,12 @@
         private System.Windows.Forms.PictureBox pictureBoxYouTube;
         private System.Windows.Forms.PictureBox pictureBoxInst;
         private System.Windows.Forms.PictureBox pictureBoxVK;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBoxVremaProstora;
+        private System.Windows.Forms.PictureBox pictureBoxLenin2;
+        private System.Windows.Forms.PictureBox pictureBoxLenin;
+        private System.Windows.Forms.PictureBox pictureBoxPerv;
+        private System.Windows.Forms.PictureBox pictureBoxOkt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxOktLeps;
     }
 }
