@@ -159,6 +159,12 @@
     <Compile Include="Smart.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormLenin.resx">
+      <DependentUpon>FormLenin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLenin2.resx">
+      <DependentUpon>FormLenin2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +173,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormOkt.resx">
       <DependentUpon>FormOkt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOktLeps.resx">
+      <DependentUpon>FormOktLeps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPerv.resx">
+      <DependentUpon>FormPerv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVremaProstora.resx">
+      <DependentUpon>FormVremaProstora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

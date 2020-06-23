@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 413);
             this.Name = "FormOkt";
-            this.Text = "МФЦ по Октябрьскому району";
+            this.Text = "МФЦ по Октябрьскому району ";
             this.ResumeLayout(false);
 
         }
