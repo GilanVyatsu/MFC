@@ -25,6 +25,7 @@ namespace MFC
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Applications> Applications { get; set; }
         public virtual DbSet<Contacts> Contacts { get; set; }
         public virtual DbSet<Jobs> Jobs { get; set; }
         public virtual DbSet<Main> Main { get; set; }

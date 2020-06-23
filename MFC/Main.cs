@@ -19,6 +19,7 @@ namespace MFC
         public string Why { get; set; }
         public string Advantages { get; set; }
     
+        public virtual Applications Applications { get; set; }
         public virtual Contacts Contacts { get; set; }
         public virtual Jobs Jobs { get; set; }
         public virtual Services Services { get; set; }

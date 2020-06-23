@@ -12,14 +12,13 @@ namespace MFC
     using System;
     using System.Collections.Generic;
     
-    public partial class Contacts
+    public partial class Applications
     {
         public int id { get; set; }
-        public string Address { get; set; }
-        public string Timetable { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string Description { get; set; }
+        public string Appointment { get; set; }
+        public string Data { get; set; }
+        public string Сonfirmed { get; set; }
+        public string Rejected { get; set; }
     
         public virtual Main Main { get; set; }
     }

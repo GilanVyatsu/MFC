@@ -5,15 +5,26 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище MFCModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Applications">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Appointment" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Сonfirmed" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Rejected" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
         <EntityType Name="Contacts">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="Address" Type="nvarchar(max)" />
-          <Property Name="Timetable" Type="nvarchar(max)" />
-          <Property Name="Phone" Type="nvarchar(max)" />
-          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Timetable" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="Jobs">
           <Key>
@@ -57,6 +68,18 @@
           <Property Name="List" Type="nvarchar(max)" />
           <Property Name="Responsibility" Type="nvarchar(max)" />
         </EntityType>
+        <Association Name="FK_Main_Applications">
+          <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
+          <End Role="Main" Type="Self.Main" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Applications">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Main">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Main_Contacts">
           <End Role="Contacts" Type="Self.Contacts" Multiplicity="1" />
           <End Role="Main" Type="Self.Main" Multiplicity="0..1" />
@@ -118,12 +141,17 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="Хранилище MFCModelContainer">
+          <EntitySet Name="Applications" EntityType="Self.Applications" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Jobs" EntityType="Self.Jobs" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Main" EntityType="Self.Main" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Paid" EntityType="Self.Paid" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Smart" EntityType="Self.Smart" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Main_Applications" Association="Self.FK_Main_Applications">
+            <End Role="Applications" EntitySet="Applications" />
+            <End Role="Main" EntitySet="Main" />
+          </AssociationSet>
           <AssociationSet Name="FK_Main_Contacts" Association="Self.FK_Main_Contacts">
             <End Role="Contacts" EntitySet="Contacts" />
             <End Role="Main" EntitySet="Main" />
@@ -150,15 +178,27 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="MFCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Applications">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Appointment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Сonfirmed" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Rejected" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Main" Relationship="Self.FK_Main_Applications" FromRole="Applications" ToRole="Main" />
+        </EntityType>
         <EntityType Name="Contacts">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Timetable" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Timetable" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Main" Relationship="Self.FK_Main_Contacts" FromRole="Contacts" ToRole="Main" />
         </EntityType>
         <EntityType Name="Jobs">
@@ -179,6 +219,7 @@
           <Property Name="MFC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Why" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Advantages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Applications" Relationship="Self.FK_Main_Applications" FromRole="Main" ToRole="Applications" />
           <NavigationProperty Name="Contacts" Relationship="Self.FK_Main_Contacts" FromRole="Main" ToRole="Contacts" />
           <NavigationProperty Name="Jobs" Relationship="Self.FK_Main_Jobs" FromRole="Main" ToRole="Jobs" />
           <NavigationProperty Name="Services" Relationship="Self.FK_Main_Services" FromRole="Main" ToRole="Services" />
@@ -212,6 +253,18 @@
           <Property Name="Responsibility" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Services" Relationship="Self.FK_Services_Smart" FromRole="Smart" ToRole="Services" />
         </EntityType>
+        <Association Name="FK_Main_Applications">
+          <End Role="Applications" Type="Self.Applications" Multiplicity="1" />
+          <End Role="Main" Type="Self.Main" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Applications">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Main">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Main_Contacts">
           <End Role="Contacts" Type="Self.Contacts" Multiplicity="1" />
           <End Role="Main" Type="Self.Main" Multiplicity="0..1" />
@@ -273,12 +326,17 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="MFCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Applications" EntityType="Self.Applications" />
           <EntitySet Name="Contacts" EntityType="Self.Contacts" />
           <EntitySet Name="Jobs" EntityType="Self.Jobs" />
           <EntitySet Name="Main" EntityType="Self.Main" />
           <EntitySet Name="Paid" EntityType="Self.Paid" />
           <EntitySet Name="Services" EntityType="Self.Services" />
           <EntitySet Name="Smart" EntityType="Self.Smart" />
+          <AssociationSet Name="FK_Main_Applications" Association="Self.FK_Main_Applications">
+            <End Role="Applications" EntitySet="Applications" />
+            <End Role="Main" EntitySet="Main" />
+          </AssociationSet>
           <AssociationSet Name="FK_Main_Contacts" Association="Self.FK_Main_Contacts">
             <End Role="Contacts" EntitySet="Contacts" />
             <End Role="Main" EntitySet="Main" />
@@ -306,6 +364,17 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities">
+          <EntitySetMapping Name="Applications">
+            <EntityTypeMapping TypeName="MFCModel.Applications">
+              <MappingFragment StoreEntitySet="Applications">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Appointment" ColumnName="Appointment" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Сonfirmed" ColumnName="Сonfirmed" />
+                <ScalarProperty Name="Rejected" ColumnName="Rejected" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Contacts">
             <EntityTypeMapping TypeName="MFCModel.Contacts">
               <MappingFragment StoreEntitySet="Contacts">
@@ -314,6 +383,7 @@
                 <ScalarProperty Name="Timetable" ColumnName="Timetable" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

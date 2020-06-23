@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications.cs">
+      <DependentUpon>ModelMFC.tt</DependentUpon>
+    </Compile>
     <Compile Include="Contacts.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
@@ -163,19 +166,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ModelMFC.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelMFC.Context.cs</LastGenOutput>
       <DependentUpon>ModelMFC.edmx</DependentUpon>
+      <LastGenOutput>ModelMFC.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ModelMFC.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelMFC.edmx</DependentUpon>
       <LastGenOutput>ModelMFC.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

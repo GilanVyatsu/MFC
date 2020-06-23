@@ -4,13 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e4cac07402d14969be8c78a6e120af8f" Name="Diagram1">
-        <EntityTypeShape EntityType="MFCModel.Contacts" Width="1.5" PointX="8.5" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Jobs" Width="1.5" PointX="1.625" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Main" Width="1.5" PointX="5.125" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Paid" Width="1.5" PointX="8.125" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Services" Width="1.5" PointX="5.375" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Smart" Width="1.5" PointX="2.125" PointY="5.375" IsExpanded="true" />
+      <Diagram DiagramId="830564b91e274d93b8a57ec0d89fc853" Name="Diagram1">
+        <EntityTypeShape EntityType="MFCModel.Applications" Width="1.5" PointX="2.875" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Contacts" Width="1.5" PointX="0.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Jobs" Width="1.5" PointX="0.875" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Main" Width="1.5" PointX="2.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Paid" Width="1.5" PointX="5.375" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Services" Width="1.5" PointX="6.125" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Smart" Width="1.5" PointX="7.625" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="MFCModel.FK_Main_Applications" ManuallyRouted="false" />
         <AssociationConnector Association="MFCModel.FK_Main_Contacts" ManuallyRouted="false" />
         <AssociationConnector Association="MFCModel.FK_Main_Jobs" ManuallyRouted="false" />
         <AssociationConnector Association="MFCModel.FK_Main_Services" ManuallyRouted="false" />
