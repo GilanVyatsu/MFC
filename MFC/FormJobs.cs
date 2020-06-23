@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace MFC
 {
-    public partial class FormMain : Form
+    public partial class FormJobs : Form
     {
-        public FormMain()
+        public FormJobs()
         {
             InitializeComponent();
-        }
-
-        private void buttonMFC_Click(object sender, EventArgs e)
-        {
-            {
-                Form formMFC = new FormMFC();
-                formMFC.Show();
-            }
         }
     }
 }

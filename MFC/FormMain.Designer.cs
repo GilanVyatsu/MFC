@@ -82,6 +82,7 @@
             this.buttonMFC.TabIndex = 3;
             this.buttonMFC.Text = "О МФЦ";
             this.buttonMFC.UseVisualStyleBackColor = false;
+            this.buttonMFC.Click += new System.EventHandler(this.buttonMFC_Click);
             // 
             // buttonContacts
             // 
