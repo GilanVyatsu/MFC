@@ -48,14 +48,45 @@ namespace MFC
             Process.Start("https://www.instagram.com/mfckirov43/");
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBoxLenin2_Click(object sender, EventArgs e)
         {
-            
+            Form formLenin2 = new FormLenin2();
+            formLenin2.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBoxOktLeps_Click(object sender, EventArgs e)
+        {
+            Form formOktLeps = new FormOktLeps();
+            formOktLeps.Show();
+        }
+
+        private void pictureBoxOkt_Click(object sender, EventArgs e)
+        {
+            Form formOkt = new FormOkt();
+            formOkt.Show();
+        }
+
+        private void pictureBoxPerv_Click(object sender, EventArgs e)
+        {
+            Form formPerv = new FormPerv();
+            formPerv.Show();
+        }
+
+        private void pictureBoxLenin_Click(object sender, EventArgs e)
+        {
+            Form formLenin = new FormLenin();
+            formLenin.Show();
+        }
+
+        private void pictureBoxVremaProstora_Click(object sender, EventArgs e)
+        {
+            Form formVremaProstora = new FormVremaProstora();
+            formVremaProstora.Show();
         }
     }
 }

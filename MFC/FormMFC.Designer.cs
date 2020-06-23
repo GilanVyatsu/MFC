@@ -60,7 +60,7 @@
             // 
             this.pictureBoxFB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.pictureBoxFB.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFB.Image")));
-            this.pictureBoxFB.Location = new System.Drawing.Point(623, 25);
+            this.pictureBoxFB.Location = new System.Drawing.Point(625, 25);
             this.pictureBoxFB.Name = "pictureBoxFB";
             this.pictureBoxFB.Size = new System.Drawing.Size(44, 44);
             this.pictureBoxFB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@
             // pictureBoxVK
             // 
             this.pictureBoxVK.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxVK.Image")));
-            this.pictureBoxVK.Location = new System.Drawing.Point(697, 25);
+            this.pictureBoxVK.Location = new System.Drawing.Point(698, 25);
             this.pictureBoxVK.Name = "pictureBoxVK";
             this.pictureBoxVK.Size = new System.Drawing.Size(44, 44);
             this.pictureBoxVK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,6 +132,7 @@
             this.pictureBoxVremaProstora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxVremaProstora.TabIndex = 5;
             this.pictureBoxVremaProstora.TabStop = false;
+            this.pictureBoxVremaProstora.Click += new System.EventHandler(this.pictureBoxVremaProstora_Click);
             // 
             // pictureBoxLenin2
             // 
@@ -143,7 +144,7 @@
             this.pictureBoxLenin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLenin2.TabIndex = 6;
             this.pictureBoxLenin2.TabStop = false;
-            this.pictureBoxLenin2.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBoxLenin2.Click += new System.EventHandler(this.pictureBoxLenin2_Click);
             // 
             // pictureBoxLenin
             // 
@@ -154,6 +155,7 @@
             this.pictureBoxLenin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLenin.TabIndex = 7;
             this.pictureBoxLenin.TabStop = false;
+            this.pictureBoxLenin.Click += new System.EventHandler(this.pictureBoxLenin_Click);
             // 
             // pictureBoxPerv
             // 
@@ -164,6 +166,7 @@
             this.pictureBoxPerv.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPerv.TabIndex = 8;
             this.pictureBoxPerv.TabStop = false;
+            this.pictureBoxPerv.Click += new System.EventHandler(this.pictureBoxPerv_Click);
             // 
             // pictureBoxOkt
             // 
@@ -174,6 +177,7 @@
             this.pictureBoxOkt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxOkt.TabIndex = 9;
             this.pictureBoxOkt.TabStop = false;
+            this.pictureBoxOkt.Click += new System.EventHandler(this.pictureBoxOkt_Click);
             // 
             // label1
             // 
@@ -189,12 +193,13 @@
             // 
             this.pictureBoxOktLeps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBoxOktLeps.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOktLeps.Image")));
-            this.pictureBoxOktLeps.Location = new System.Drawing.Point(312, 30);
+            this.pictureBoxOktLeps.Location = new System.Drawing.Point(312, 32);
             this.pictureBoxOktLeps.Name = "pictureBoxOktLeps";
             this.pictureBoxOktLeps.Size = new System.Drawing.Size(43, 36);
             this.pictureBoxOktLeps.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxOktLeps.TabIndex = 15;
             this.pictureBoxOktLeps.TabStop = false;
+            this.pictureBoxOktLeps.Click += new System.EventHandler(this.pictureBoxOktLeps_Click);
             // 
             // FormMFC
             // 

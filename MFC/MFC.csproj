@@ -67,6 +67,18 @@
     <Compile Include="FormApplications.Designer.cs">
       <DependentUpon>FormApplications.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLenin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLenin.Designer.cs">
+      <DependentUpon>FormLenin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLenin2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLenin2.Designer.cs">
+      <DependentUpon>FormLenin2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOkt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +103,29 @@
     <Compile Include="FormMFC.Designer.cs">
       <DependentUpon>FormMFC.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOktLeps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOktLeps.Designer.cs">
+      <DependentUpon>FormOktLeps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPerv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPerv.Designer.cs">
+      <DependentUpon>FormPerv.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormServices.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormServices.Designer.cs">
       <DependentUpon>FormServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVremaProstora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVremaProstora.Designer.cs">
+      <DependentUpon>FormVremaProstora.cs</DependentUpon>
     </Compile>
     <Compile Include="Jobs.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
