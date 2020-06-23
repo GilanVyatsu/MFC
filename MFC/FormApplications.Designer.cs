@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
@@ -44,8 +44,8 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBoxAppointment = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBoxAppointment = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -148,8 +148,8 @@
             this.listViewApplications.GridLines = true;
             this.listViewApplications.HideSelection = false;
             this.listViewApplications.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
-            this.listViewApplications.Location = new System.Drawing.Point(242, 9);
+            listViewItem2});
+            this.listViewApplications.Location = new System.Drawing.Point(232, 12);
             this.listViewApplications.Name = "listViewApplications";
             this.listViewApplications.Size = new System.Drawing.Size(546, 315);
             this.listViewApplications.TabIndex = 9;
@@ -185,14 +185,6 @@
             this.panel1.Size = new System.Drawing.Size(802, 112);
             this.panel1.TabIndex = 12;
             // 
-            // comboBoxAppointment
-            // 
-            this.comboBoxAppointment.FormattingEnabled = true;
-            this.comboBoxAppointment.Location = new System.Drawing.Point(24, 303);
-            this.comboBoxAppointment.Name = "comboBoxAppointment";
-            this.comboBoxAppointment.Size = new System.Drawing.Size(170, 21);
-            this.comboBoxAppointment.TabIndex = 0;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -202,14 +194,21 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Статус заявки";
             // 
+            // textBoxAppointment
+            // 
+            this.textBoxAppointment.Location = new System.Drawing.Point(24, 307);
+            this.textBoxAppointment.Name = "textBoxAppointment";
+            this.textBoxAppointment.Size = new System.Drawing.Size(135, 20);
+            this.textBoxAppointment.TabIndex = 14;
+            // 
             // FormApplications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 527);
+            this.Controls.Add(this.textBoxAppointment);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxAppointment);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.listViewApplications);
@@ -245,7 +244,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBoxAppointment;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxAppointment;
     }
 }

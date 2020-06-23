@@ -15,6 +15,7 @@ namespace MFC
         public FormApplications()
         {
             InitializeComponent();
+            ShowApplications();
         }
         private void listViewApplications_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -24,6 +25,7 @@ namespace MFC
                 textBoxFirstName.Text = applications.FirstName;
                 textBoxMiddleName.Text = applications.MiddleName;
                 textBoxLastName.Text = applications.LastName;
+                textBoxAppointment.Text = applications.Appointment;
             }
 
             else
@@ -31,6 +33,7 @@ namespace MFC
                 textBoxFirstName.Text = "";
                 textBoxMiddleName.Text = "";
                 textBoxLastName.Text = "";
+                textBoxAppointment.Text = "";
             }
         }
 
@@ -41,14 +44,15 @@ namespace MFC
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            Applications applications = new Applications();
-            applications.FirstName = textBoxFirstName.Text;
-            applications.MiddleName = textBoxMiddleName.Text;
-            applications.LastName = textBoxLastName.Text;
-            Program.mFC.Applications.Add(applications);
-            Program.mFC.SaveChanges();
+                Applications applications = new Applications();
+                applications.FirstName = textBoxFirstName.Text;
+                applications.MiddleName = textBoxMiddleName.Text;
+                applications.LastName = textBoxLastName.Text;
+                applications.Appointment = textBoxAppointment.Text;
+                Program.mFC.Applications.Add(applications);
+                Program.mFC.SaveChanges();
         }
-        void ShowPersonal()
+        void ShowApplications()
         {
             listViewApplications.Items.Clear();
             foreach (Applications applications in Program.mFC.Applications)
@@ -56,7 +60,7 @@ namespace MFC
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     applications.id.ToString(), applications.FirstName, applications.MiddleName,
-                    applications.LastName,
+                    applications.LastName, applications.Appointment
                 });
                 item.Tag = applications;
                 listViewApplications.Items.Add(item);
@@ -72,8 +76,9 @@ namespace MFC
                 applications.FirstName = textBoxFirstName.Text;
                 applications.MiddleName = textBoxMiddleName.Text;
                 applications.LastName = textBoxLastName.Text;
+                applications.Appointment = textBoxAppointment.Text;
                 Program.mFC.SaveChanges();
-                ShowPersonal();
+                ShowApplications();
             }
         }
 
@@ -90,6 +95,7 @@ namespace MFC
                 textBoxFirstName.Text = "";
                 textBoxMiddleName.Text = "";
                 textBoxLastName.Text = "";
+                textBoxAppointment.Text = "";
             }
             catch
             {
@@ -97,5 +103,6 @@ namespace MFC
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    }
+    } 
 }
+

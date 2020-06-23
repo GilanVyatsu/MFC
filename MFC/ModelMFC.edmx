@@ -14,7 +14,7 @@
           <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="idAppointment" Type="int" Nullable="false" />
+          <Property Name="Appointment" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="Contacts">
           <Key>
@@ -188,7 +188,7 @@
           <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="idAppointment" Type="Int32" Nullable="false" />
+          <Property Name="Appointment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Main" Relationship="Self.FK_Main_Applications" FromRole="Applications" ToRole="Main" />
         </EntityType>
         <EntityType Name="Contacts">
@@ -374,7 +374,7 @@
                 <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="Data" ColumnName="Data" />
-                <ScalarProperty Name="idAppointment" ColumnName="idAppointment" />
+                <ScalarProperty Name="Appointment" ColumnName="Appointment" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
