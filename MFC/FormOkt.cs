@@ -16,5 +16,20 @@ namespace MFC
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormOkt_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
