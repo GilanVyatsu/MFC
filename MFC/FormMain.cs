@@ -34,5 +34,23 @@ namespace MFC
         {
 
         }
+
+        private void buttonContacts_Click(object sender, EventArgs e)
+        {
+            Form formContacts = new FormContacts();
+            formContacts.Show();
+        }
+
+        private void buttonJobs_Click(object sender, EventArgs e)
+        {
+            Form formJobs = new FormJobs();
+            formJobs.Show();
+        }
+
+        private void buttonServices_Click(object sender, EventArgs e)
+        {
+            Form formServices = new FormServices();
+            formServices.Show();
+        }
     }
 }

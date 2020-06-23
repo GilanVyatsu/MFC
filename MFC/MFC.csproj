@@ -58,6 +58,18 @@
     <Compile Include="Contacts.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormApplications.Designer.cs">
+      <DependentUpon>FormApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContacts.Designer.cs">
+      <DependentUpon>FormContacts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormJobs.cs">
       <SubType>Form</SubType>
     </Compile>
