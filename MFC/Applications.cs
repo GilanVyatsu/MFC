@@ -15,10 +15,11 @@ namespace MFC
     public partial class Applications
     {
         public int id { get; set; }
-        public string Appointment { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
+        public string LastName { get; set; }
         public string Data { get; set; }
-        public string Сonfirmed { get; set; }
-        public string Rejected { get; set; }
+        public int idAppointment { get; set; }
     
         public virtual Main Main { get; set; }
     }

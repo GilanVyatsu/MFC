@@ -10,10 +10,11 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="Appointment" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Сonfirmed" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Rejected" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="idAppointment" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Contacts">
           <Key>
@@ -183,10 +184,11 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="Appointment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Сonfirmed" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Rejected" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="idAppointment" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Main" Relationship="Self.FK_Main_Applications" FromRole="Applications" ToRole="Main" />
         </EntityType>
         <EntityType Name="Contacts">
@@ -325,7 +327,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MFCEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MFCEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Applications" EntityType="Self.Applications" />
           <EntitySet Name="Contacts" EntityType="Self.Contacts" />
           <EntitySet Name="Jobs" EntityType="Self.Jobs" />
@@ -363,15 +365,16 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities1">
           <EntitySetMapping Name="Applications">
             <EntityTypeMapping TypeName="MFCModel.Applications">
               <MappingFragment StoreEntitySet="Applications">
                 <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="Appointment" ColumnName="Appointment" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="Data" ColumnName="Data" />
-                <ScalarProperty Name="Сonfirmed" ColumnName="Сonfirmed" />
-                <ScalarProperty Name="Rejected" ColumnName="Rejected" />
+                <ScalarProperty Name="idAppointment" ColumnName="idAppointment" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

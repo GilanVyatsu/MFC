@@ -159,6 +159,9 @@
     <Compile Include="Smart.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormApplications.resx">
+      <DependentUpon>FormApplications.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLenin.resx">
       <DependentUpon>FormLenin.cs</DependentUpon>
     </EmbeddedResource>
