@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MFC
 {
-    public partial class FormChep : Form
+    public partial class FormPolis : Form
     {
-        public FormChep()
+        public FormPolis()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace MFC
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MFC
 {
-    public partial class FormChep : Form
+    public partial class FormStrahovanie : Form
     {
-        public FormChep()
+        public FormStrahovanie()
         {
             InitializeComponent();
+        }
+
+        private void FormStrahovanie_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void pictureBoxExit_Click(object sender, EventArgs e)

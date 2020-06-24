@@ -77,7 +77,7 @@
             // buttonMFC
             // 
             this.buttonMFC.BackColor = System.Drawing.Color.White;
-            this.buttonMFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMFC.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonMFC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buttonMFC.Location = new System.Drawing.Point(78, 334);
             this.buttonMFC.Name = "buttonMFC";
@@ -90,7 +90,7 @@
             // buttonJobs
             // 
             this.buttonJobs.BackColor = System.Drawing.Color.White;
-            this.buttonJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonJobs.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonJobs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buttonJobs.Location = new System.Drawing.Point(381, 247);
             this.buttonJobs.Name = "buttonJobs";
@@ -103,7 +103,7 @@
             // buttonServices
             // 
             this.buttonServices.BackColor = System.Drawing.Color.White;
-            this.buttonServices.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonServices.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buttonServices.Location = new System.Drawing.Point(381, 334);
             this.buttonServices.Name = "buttonServices";
@@ -145,7 +145,7 @@
             // buttonApplications
             // 
             this.buttonApplications.BackColor = System.Drawing.Color.White;
-            this.buttonApplications.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonApplications.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonApplications.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buttonApplications.Location = new System.Drawing.Point(381, 159);
             this.buttonApplications.Name = "buttonApplications";

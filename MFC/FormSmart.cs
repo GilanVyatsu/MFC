@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MFC
 {
-    public partial class FormChep : Form
+    public partial class FormSmart : Form
     {
-        public FormChep()
+        public FormSmart()
         {
             InitializeComponent();
-        }
-
-        private void pictureBoxExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

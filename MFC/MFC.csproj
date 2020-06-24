@@ -61,6 +61,12 @@
     <Compile Include="Contacts.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormFizLico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFizLico.Designer.cs">
+      <DependentUpon>FormFizLico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormApplications.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="FormEksp.Designer.cs">
       <DependentUpon>FormEksp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHouse.Designer.cs">
+      <DependentUpon>FormHouse.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLenin.cs">
       <SubType>Form</SubType>
@@ -121,17 +133,41 @@
     <Compile Include="FormOktLeps.Designer.cs">
       <DependentUpon>FormOktLeps.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPaid.Designer.cs">
+      <DependentUpon>FormPaid.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPerv.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPerv.Designer.cs">
       <DependentUpon>FormPerv.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPolis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPolis.Designer.cs">
+      <DependentUpon>FormPolis.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormServices.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormServices.Designer.cs">
       <DependentUpon>FormServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSmart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSmart.Designer.cs">
+      <DependentUpon>FormSmart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStrahovanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStrahovanie.Designer.cs">
+      <DependentUpon>FormStrahovanie.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVed.cs">
       <SubType>Form</SubType>
@@ -144,6 +180,12 @@
     </Compile>
     <Compile Include="FormVremaProstora.Designer.cs">
       <DependentUpon>FormVremaProstora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrLico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrLico.Designer.cs">
+      <DependentUpon>FormUrLico.cs</DependentUpon>
     </Compile>
     <Compile Include="Jobs.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
@@ -180,6 +222,18 @@
     <EmbeddedResource Include="FormApplications.resx">
       <DependentUpon>FormApplications.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormChep.resx">
+      <DependentUpon>FormChep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEksp.resx">
+      <DependentUpon>FormEksp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFizLico.resx">
+      <DependentUpon>FormFizLico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHouse.resx">
+      <DependentUpon>FormHouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormJobs.resx">
       <DependentUpon>FormJobs.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,8 +255,23 @@
     <EmbeddedResource Include="FormOktLeps.resx">
       <DependentUpon>FormOktLeps.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPaid.resx">
+      <DependentUpon>FormPaid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPerv.resx">
       <DependentUpon>FormPerv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPolis.resx">
+      <DependentUpon>FormPolis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServices.resx">
+      <DependentUpon>FormServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStrahovanie.resx">
+      <DependentUpon>FormStrahovanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrLico.resx">
+      <DependentUpon>FormUrLico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVed.resx">
       <DependentUpon>FormVed.cs</DependentUpon>

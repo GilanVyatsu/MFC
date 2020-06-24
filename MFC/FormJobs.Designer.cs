@@ -103,6 +103,7 @@
             this.labelEcsp.TabIndex = 5;
             this.labelEcsp.Text = "Эксперт-методолог сектора реализации проектов управления разработки и реализации " +
     "перспективных проектов";
+            this.labelEcsp.Click += new System.EventHandler(this.labelEcsp_Click);
             // 
             // labelChep
             // 
@@ -114,13 +115,14 @@
             this.labelChep.Size = new System.Drawing.Size(506, 19);
             this.labelChep.TabIndex = 6;
             this.labelChep.Text = "Эксперт территориального отдела МФЦ в г. Кирово-Чепецке (временно)";
+            this.labelChep.Click += new System.EventHandler(this.labelChep_Click);
             // 
             // FormJobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(568, 469);
+            this.ClientSize = new System.Drawing.Size(568, 358);
             this.Controls.Add(this.labelChep);
             this.Controls.Add(this.labelEcsp);
             this.Controls.Add(this.label5);

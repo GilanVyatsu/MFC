@@ -22,5 +22,17 @@ namespace MFC
             Form formVed = new FormVed();
             formVed.Show();
         }
+
+        private void labelEcsp_Click(object sender, EventArgs e)
+        {
+            Form formEksp = new FormEksp();
+            formEksp.Show();
+        }
+
+        private void labelChep_Click(object sender, EventArgs e)
+        {
+            Form formChep = new FormChep();
+            formChep.Show();
+        }
     }
 }

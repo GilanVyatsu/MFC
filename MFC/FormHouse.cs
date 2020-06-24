@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MFC
 {
-    public partial class FormChep : Form
+    public partial class FormHouse : Form
     {
-        public FormChep()
+        public FormHouse()
         {
             InitializeComponent();
         }
