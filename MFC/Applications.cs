@@ -18,7 +18,6 @@ namespace MFC
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
-        public string Data { get; set; }
         public string Appointment { get; set; }
     
         public virtual Main Main { get; set; }

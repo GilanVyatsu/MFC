@@ -13,7 +13,6 @@
           <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Appointment" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="Contacts">
@@ -187,7 +186,6 @@
           <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Appointment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Main" Relationship="Self.FK_Main_Applications" FromRole="Applications" ToRole="Main" />
         </EntityType>
@@ -327,7 +325,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MFCEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MFCEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Applications" EntityType="Self.Applications" />
           <EntitySet Name="Contacts" EntityType="Self.Contacts" />
           <EntitySet Name="Jobs" EntityType="Self.Jobs" />
@@ -365,7 +363,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities2">
           <EntitySetMapping Name="Applications">
             <EntityTypeMapping TypeName="MFCModel.Applications">
               <MappingFragment StoreEntitySet="Applications">
@@ -373,7 +371,6 @@
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
-                <ScalarProperty Name="Data" ColumnName="Data" />
                 <ScalarProperty Name="Appointment" ColumnName="Appointment" />
               </MappingFragment>
             </EntityTypeMapping>

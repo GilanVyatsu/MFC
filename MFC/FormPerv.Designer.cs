@@ -43,6 +43,7 @@
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxExit.TabIndex = 4;
             this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
             // label1
             // 

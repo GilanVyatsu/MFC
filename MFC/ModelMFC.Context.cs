@@ -13,10 +13,10 @@ namespace MFC
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MFCEntities1 : DbContext
+    public partial class MFCEntities2 : DbContext
     {
-        public MFCEntities1()
-            : base("name=MFCEntities1")
+        public MFCEntities2()
+            : base("name=MFCEntities2")
         {
         }
     

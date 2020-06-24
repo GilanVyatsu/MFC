@@ -17,6 +17,46 @@ namespace MFC
             InitializeComponent();
             ShowApplications();
         }
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            Applications applications = new Applications();
+            applications.FirstName = textBoxFirstName.Text;
+            applications.MiddleName = textBoxMiddleName.Text;
+            applications.LastName = textBoxLastName.Text;
+            applications.Appointment = textBoxAppointment.Text;
+            Program.mFC.Applications.Add(applications);
+            Program.mFC.SaveChanges();
+        }
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (listViewApplications.SelectedItems.Count == 1)
+            {
+                Applications applications = listViewApplications.SelectedItems[0].Tag as Applications;
+                applications.FirstName = textBoxFirstName.Text;
+                applications.MiddleName = textBoxMiddleName.Text;
+                applications.LastName = textBoxLastName.Text;
+                applications.Appointment = textBoxAppointment.Text;
+                Program.mFC.SaveChanges();
+                ShowApplications();
+            }
+        }
+
+        void ShowApplications()
+        {
+            listViewApplications.Items.Clear();
+            foreach (Applications applications in Program.mFC.Applications)
+            {
+                ListViewItem item = new ListViewItem(new string[]
+                {
+                    applications.id.ToString(), applications.FirstName, applications.MiddleName,
+                    applications.LastName, applications.Appointment
+                });
+                item.Tag = applications;
+                listViewApplications.Items.Add(item);
+            }
+            listViewApplications.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
         private void listViewApplications_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewApplications.SelectedItems.Count == 1)
@@ -36,52 +76,6 @@ namespace MFC
                 textBoxAppointment.Text = "";
             }
         }
-
-        private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonAdd_Click(object sender, EventArgs e)
-        {
-                Applications applications = new Applications();
-                applications.FirstName = textBoxFirstName.Text;
-                applications.MiddleName = textBoxMiddleName.Text;
-                applications.LastName = textBoxLastName.Text;
-                applications.Appointment = textBoxAppointment.Text;
-                Program.mFC.Applications.Add(applications);
-                Program.mFC.SaveChanges();
-        }
-        void ShowApplications()
-        {
-            listViewApplications.Items.Clear();
-            foreach (Applications applications in Program.mFC.Applications)
-            {
-                ListViewItem item = new ListViewItem(new string[]
-                {
-                    applications.id.ToString(), applications.FirstName, applications.MiddleName,
-                    applications.LastName, applications.Appointment
-                });
-                item.Tag = applications;
-                listViewApplications.Items.Add(item);
-            }
-            listViewApplications.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-        }
-
-        private void buttonEdit_Click(object sender, EventArgs e)
-        {
-            if (listViewApplications.SelectedItems.Count == 1)
-            {
-                Applications applications = listViewApplications.SelectedItems[0].Tag as Applications;
-                applications.FirstName = textBoxFirstName.Text;
-                applications.MiddleName = textBoxMiddleName.Text;
-                applications.LastName = textBoxLastName.Text;
-                applications.Appointment = textBoxAppointment.Text;
-                Program.mFC.SaveChanges();
-                ShowApplications();
-            }
-        }
-
         private void buttonDel_Click(object sender, EventArgs e)
         {
             try

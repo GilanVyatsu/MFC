@@ -8,7 +8,7 @@ namespace MFC
 {
     static class Program
     {
-        public static MFCEntities1 mFC = new MFCEntities1();
+        public static MFCEntities2 mFC = new MFCEntities2();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
