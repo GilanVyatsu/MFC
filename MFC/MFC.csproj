@@ -67,6 +67,18 @@
     <Compile Include="FormApplications.Designer.cs">
       <DependentUpon>FormApplications.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChep.Designer.cs">
+      <DependentUpon>FormChep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEksp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEksp.Designer.cs">
+      <DependentUpon>FormEksp.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLenin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,12 @@
     <Compile Include="FormServices.Designer.cs">
       <DependentUpon>FormServices.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVed.Designer.cs">
+      <DependentUpon>FormVed.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVremaProstora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +180,9 @@
     <EmbeddedResource Include="FormApplications.resx">
       <DependentUpon>FormApplications.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormJobs.resx">
+      <DependentUpon>FormJobs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLenin.resx">
       <DependentUpon>FormLenin.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPerv.resx">
       <DependentUpon>FormPerv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVed.resx">
+      <DependentUpon>FormVed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVremaProstora.resx">
       <DependentUpon>FormVremaProstora.cs</DependentUpon>
