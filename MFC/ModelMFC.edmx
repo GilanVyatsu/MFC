@@ -14,6 +14,7 @@
           <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Appointment" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Field" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="Contacts">
           <Key>
@@ -187,6 +188,7 @@
           <Property Name="MiddleName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Appointment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Field" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Main" Relationship="Self.FK_Main_Applications" FromRole="Applications" ToRole="Main" />
         </EntityType>
         <EntityType Name="Contacts">
@@ -325,7 +327,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MFCEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MFCEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Applications" EntityType="Self.Applications" />
           <EntitySet Name="Contacts" EntityType="Self.Contacts" />
           <EntitySet Name="Jobs" EntityType="Self.Jobs" />
@@ -363,7 +365,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities2">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MFCModelContainer" CdmEntityContainer="MFCEntities1">
           <EntitySetMapping Name="Applications">
             <EntityTypeMapping TypeName="MFCModel.Applications">
               <MappingFragment StoreEntitySet="Applications">
@@ -372,6 +374,7 @@
                 <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="Appointment" ColumnName="Appointment" />
+                <ScalarProperty Name="Field" ColumnName="Field" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

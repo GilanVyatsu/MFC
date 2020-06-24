@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
@@ -46,6 +46,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxAppointment = new System.Windows.Forms.TextBox();
+            this.labelField = new System.Windows.Forms.Label();
+            this.textBoxField = new System.Windows.Forms.TextBox();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -89,21 +92,21 @@
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(24, 66);
+            this.textBoxFirstName.Location = new System.Drawing.Point(24, 40);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(135, 20);
             this.textBoxFirstName.TabIndex = 3;
             // 
             // textBoxMiddleName
             // 
-            this.textBoxMiddleName.Location = new System.Drawing.Point(24, 143);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(24, 109);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(135, 20);
             this.textBoxMiddleName.TabIndex = 4;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(24, 213);
+            this.textBoxLastName.Location = new System.Drawing.Point(24, 184);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(135, 20);
             this.textBoxLastName.TabIndex = 5;
@@ -111,27 +114,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 40);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(21, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 6;
             this.label1.Text = "Имя";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 118);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(21, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "Фамилия";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 188);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(21, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(58, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Отчество";
             // 
@@ -142,16 +148,17 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.listViewApplications.ForeColor = System.Drawing.Color.Black;
             this.listViewApplications.FullRowSelect = true;
             this.listViewApplications.GridLines = true;
             this.listViewApplications.HideSelection = false;
             this.listViewApplications.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.listViewApplications.Location = new System.Drawing.Point(232, 12);
+            listViewItem1});
+            this.listViewApplications.Location = new System.Drawing.Point(222, 12);
             this.listViewApplications.Name = "listViewApplications";
-            this.listViewApplications.Size = new System.Drawing.Size(546, 315);
+            this.listViewApplications.Size = new System.Drawing.Size(563, 315);
             this.listViewApplications.TabIndex = 9;
             this.listViewApplications.UseCompatibleStateImageBehavior = false;
             this.listViewApplications.View = System.Windows.Forms.View.Details;
@@ -160,22 +167,22 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Имя";
-            this.columnHeader1.Width = 138;
+            this.columnHeader1.Width = 108;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Фамилия";
-            this.columnHeader2.Width = 160;
+            this.columnHeader2.Width = 114;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Отчество";
-            this.columnHeader3.Width = 119;
+            this.columnHeader3.Width = 104;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Заявка";
-            this.columnHeader4.Width = 124;
+            this.columnHeader4.Width = 93;
             // 
             // panel1
             // 
@@ -188,18 +195,41 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 287);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(21, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 13);
+            this.label4.Size = new System.Drawing.Size(83, 15);
             this.label4.TabIndex = 13;
             this.label4.Text = "Статус заявки";
             // 
             // textBoxAppointment
             // 
-            this.textBoxAppointment.Location = new System.Drawing.Point(24, 307);
+            this.textBoxAppointment.Location = new System.Drawing.Point(24, 249);
             this.textBoxAppointment.Name = "textBoxAppointment";
             this.textBoxAppointment.Size = new System.Drawing.Size(135, 20);
             this.textBoxAppointment.TabIndex = 14;
+            // 
+            // labelField
+            // 
+            this.labelField.AutoSize = true;
+            this.labelField.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelField.Location = new System.Drawing.Point(21, 288);
+            this.labelField.Name = "labelField";
+            this.labelField.Size = new System.Drawing.Size(195, 15);
+            this.labelField.TabIndex = 15;
+            this.labelField.Text = "Выездное обслуживание (Да/Нет)";
+            // 
+            // textBoxField
+            // 
+            this.textBoxField.Location = new System.Drawing.Point(24, 317);
+            this.textBoxField.Name = "textBoxField";
+            this.textBoxField.Size = new System.Drawing.Size(135, 20);
+            this.textBoxField.TabIndex = 16;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Выездное обслуживание";
+            this.columnHeader5.Width = 140;
             // 
             // FormApplications
             // 
@@ -207,6 +237,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 527);
+            this.Controls.Add(this.textBoxField);
+            this.Controls.Add(this.labelField);
             this.Controls.Add(this.textBoxAppointment);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -246,5 +278,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxAppointment;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Label labelField;
+        private System.Windows.Forms.TextBox textBoxField;
     }
 }

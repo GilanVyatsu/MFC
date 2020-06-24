@@ -24,8 +24,8 @@ namespace MFC
             applications.MiddleName = textBoxMiddleName.Text;
             applications.LastName = textBoxLastName.Text;
             applications.Appointment = textBoxAppointment.Text;
+            applications.Field = textBoxField.Text;
             Program.mFC.Applications.Add(applications);
-            Program.mFC.SaveChanges();
         }
         private void buttonEdit_Click(object sender, EventArgs e)
         {
@@ -36,6 +36,7 @@ namespace MFC
                 applications.MiddleName = textBoxMiddleName.Text;
                 applications.LastName = textBoxLastName.Text;
                 applications.Appointment = textBoxAppointment.Text;
+                applications.Field = textBoxField.Text;
                 Program.mFC.SaveChanges();
                 ShowApplications();
             }
@@ -49,7 +50,7 @@ namespace MFC
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     applications.id.ToString(), applications.FirstName, applications.MiddleName,
-                    applications.LastName, applications.Appointment
+                    applications.LastName, applications.Appointment, applications.Field
                 });
                 item.Tag = applications;
                 listViewApplications.Items.Add(item);
@@ -66,6 +67,7 @@ namespace MFC
                 textBoxMiddleName.Text = applications.MiddleName;
                 textBoxLastName.Text = applications.LastName;
                 textBoxAppointment.Text = applications.Appointment;
+                textBoxField.Text = applications.Field;
             }
 
             else
@@ -74,6 +76,7 @@ namespace MFC
                 textBoxMiddleName.Text = "";
                 textBoxLastName.Text = "";
                 textBoxAppointment.Text = "";
+                textBoxField.Text = "";
             }
         }
         private void buttonDel_Click(object sender, EventArgs e)
@@ -90,6 +93,7 @@ namespace MFC
                 textBoxMiddleName.Text = "";
                 textBoxLastName.Text = "";
                 textBoxAppointment.Text = "";
+                textBoxField.Text = "";
             }
             catch
             {

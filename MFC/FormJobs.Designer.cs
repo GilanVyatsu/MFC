@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelVed = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelEcsp = new System.Windows.Forms.Label();
+            this.labelChep = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -69,17 +69,18 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Отправить резюме";
             // 
-            // label4
+            // labelVed
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(23, 139);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(472, 45);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Ведущий эксперт-методолог сектора платных услуг управления разработки и реализаци" +
+            this.labelVed.BackColor = System.Drawing.Color.White;
+            this.labelVed.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelVed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelVed.Location = new System.Drawing.Point(23, 139);
+            this.labelVed.Name = "labelVed";
+            this.labelVed.Size = new System.Drawing.Size(472, 45);
+            this.labelVed.TabIndex = 3;
+            this.labelVed.Text = "Ведущий эксперт-методолог сектора платных услуг управления разработки и реализаци" +
     "и перспективных проектов";
+            this.labelVed.Click += new System.EventHandler(this.labelVed_Click);
             // 
             // label5
             // 
@@ -92,27 +93,27 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Открытые вакансии";
             // 
-            // label6
+            // labelEcsp
             // 
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(23, 184);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(442, 68);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Эксперт-методолог сектора реализации проектов управления разработки и реализации " +
+            this.labelEcsp.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEcsp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelEcsp.Location = new System.Drawing.Point(23, 184);
+            this.labelEcsp.Name = "labelEcsp";
+            this.labelEcsp.Size = new System.Drawing.Size(442, 49);
+            this.labelEcsp.TabIndex = 5;
+            this.labelEcsp.Text = "Эксперт-методолог сектора реализации проектов управления разработки и реализации " +
     "перспективных проектов";
             // 
-            // label7
+            // labelChep
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(23, 233);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(506, 19);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Эксперт территориального отдела МФЦ в г. Кирово-Чепецке (временно)";
+            this.labelChep.AutoSize = true;
+            this.labelChep.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelChep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelChep.Location = new System.Drawing.Point(23, 233);
+            this.labelChep.Name = "labelChep";
+            this.labelChep.Size = new System.Drawing.Size(506, 19);
+            this.labelChep.TabIndex = 6;
+            this.labelChep.Text = "Эксперт территориального отдела МФЦ в г. Кирово-Чепецке (временно)";
             // 
             // FormJobs
             // 
@@ -120,10 +121,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(568, 469);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.labelChep);
+            this.Controls.Add(this.labelEcsp);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelVed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -139,9 +140,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelVed;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelEcsp;
+        private System.Windows.Forms.Label labelChep;
     }
 }

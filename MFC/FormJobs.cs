@@ -16,5 +16,11 @@ namespace MFC
         {
             InitializeComponent();
         }
+
+        private void labelVed_Click(object sender, EventArgs e)
+        {
+            Form formVed = new FormVed();
+            formVed.Show();
+        }
     }
 }

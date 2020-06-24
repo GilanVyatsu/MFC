@@ -4,15 +4,24 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ae643db8698f4cc1950aad93a118d659" Name="Diagram1">
-        <EntityTypeShape EntityType="MFCModel.Applications" Width="1.5" PointX="0.5" PointY="0.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Contacts" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Jobs" Width="1.5" PointX="2.25" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Main" Width="1.5" PointX="4.5" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Paid" Width="1.5" PointX="7.875" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Services" Width="1.5" PointX="5.375" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MFCModel.Smart" Width="1.5" PointX="2.25" PointY="4.625" IsExpanded="true" />
-        <AssociationConnector Association="MFCModel.FK_Main_Applications" ManuallyRouted="false" />
+      <Diagram DiagramId="c4faaf1eac224766ac7c96464601f517" Name="Diagram1">
+        <EntityTypeShape EntityType="MFCModel.Applications" Width="1.5" PointX="0.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Contacts" Width="1.5" PointX="2.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Jobs" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Main" Width="1.5" PointX="5.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Paid" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Services" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MFCModel.Smart" Width="1.5" PointX="2.75" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="MFCModel.FK_Main_Applications" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2" PointY="3.1148893229166674" />
+          <ConnectorPoint PointX="2" PointY="3.237484476762821" />
+          <ConnectorPoint PointX="2.072916666666667" PointY="3.237484476762821" />
+          <ConnectorPoint PointX="2.447916666666667" PointY="3.4321907552083335" />
+          <ConnectorPoint PointX="2.447916666666667" PointY="0.49469075520833372" />
+          <ConnectorPoint PointX="4.875" PointY="0.49469075520833372" />
+          <ConnectorPoint PointX="4.875" PointY="3.4321907552083335" />
+          <ConnectorPoint PointX="5.25" PointY="3.0571907552083335" />
+        </AssociationConnector>
         <AssociationConnector Association="MFCModel.FK_Main_Contacts" ManuallyRouted="false" />
         <AssociationConnector Association="MFCModel.FK_Main_Jobs" ManuallyRouted="false" />
         <AssociationConnector Association="MFCModel.FK_Main_Services" ManuallyRouted="false" />

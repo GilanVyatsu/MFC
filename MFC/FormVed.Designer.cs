@@ -36,6 +36,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -110,12 +113,34 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(13, 419);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(293, 214);
+            this.label7.Size = new System.Drawing.Size(308, 214);
             this.label7.TabIndex = 6;
             this.label7.Text = "- график работы: 5/2 с 9.00 до 18.00; \r\n\r\n- официальное оформление, соцпакет; \r\n\r" +
     "\n- обучение; \r\n\r\n- карьерный рост; \r\n\r\n- заработная плата от 20 000 руб.\r\n\r\nРезю" +
     "ме присылать на электронную почту:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label8.Location = new System.Drawing.Point(304, 609);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(184, 19);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "tsaregorodtsevaiv@mfc43.ru";
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
+            this.pictureBoxExit.Location = new System.Drawing.Point(646, 12);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxExit.TabIndex = 8;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
             // FormVed
             // 
@@ -123,6 +148,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(684, 642);
+            this.Controls.Add(this.pictureBoxExit);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -133,6 +160,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormVed";
             this.Text = "FormVed";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,5 +175,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBoxExit;
     }
 }
