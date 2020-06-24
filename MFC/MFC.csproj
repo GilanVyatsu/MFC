@@ -267,6 +267,9 @@
     <EmbeddedResource Include="FormServices.resx">
       <DependentUpon>FormServices.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSmart.resx">
+      <DependentUpon>FormSmart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormStrahovanie.resx">
       <DependentUpon>FormStrahovanie.cs</DependentUpon>
     </EmbeddedResource>

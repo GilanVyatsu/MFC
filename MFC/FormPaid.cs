@@ -52,5 +52,10 @@ namespace MFC
             Form formHouse = new FormHouse();
             formHouse.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
