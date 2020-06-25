@@ -85,9 +85,9 @@
             this.panel1.Controls.Add(this.pictureBoxInst);
             this.panel1.Controls.Add(this.pictureBoxFB);
             this.panel1.Controls.Add(this.pictureBoxVK);
-            this.panel1.Location = new System.Drawing.Point(0, 477);
+            this.panel1.Location = new System.Drawing.Point(0, 515);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(914, 100);
+            this.panel1.Size = new System.Drawing.Size(942, 100);
             this.panel1.TabIndex = 4;
             // 
             // pictureBoxYouTube
@@ -181,10 +181,11 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(519, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(395, 431);
+            this.label1.Size = new System.Drawing.Size(423, 487);
             this.label1.TabIndex = 14;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -206,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(913, 576);
+            this.ClientSize = new System.Drawing.Size(939, 612);
             this.Controls.Add(this.pictureBoxOktLeps);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxLenin2);
