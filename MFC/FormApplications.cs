@@ -27,21 +27,6 @@ namespace MFC
             applications.Field = textBoxField.Text;
             Program.mFC.Applications.Add(applications);
         }
-        private void buttonEdit_Click(object sender, EventArgs e)
-        {
-            if (listViewApplications.SelectedItems.Count == 1)
-            {
-                Applications applications = listViewApplications.SelectedItems[0].Tag as Applications;
-                applications.FirstName = textBoxFirstName.Text;
-                applications.MiddleName = textBoxMiddleName.Text;
-                applications.LastName = textBoxLastName.Text;
-                applications.Appointment = textBoxAppointment.Text;
-                applications.Field = textBoxField.Text;
-                Program.mFC.SaveChanges();
-                ShowApplications();
-            }
-        }
-
         void ShowApplications()
         {
             listViewApplications.Items.Clear();
@@ -79,6 +64,20 @@ namespace MFC
                 textBoxField.Text = "";
             }
         }
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (listViewApplications.SelectedItems.Count == 1)
+            {
+                Applications applications = listViewApplications.SelectedItems[0].Tag as Applications;
+                applications.FirstName = textBoxFirstName.Text;
+                applications.MiddleName = textBoxMiddleName.Text;
+                applications.LastName = textBoxLastName.Text;
+                applications.Appointment = textBoxAppointment.Text;
+                applications.Field = textBoxField.Text;
+                Program.mFC.SaveChanges();
+                ShowApplications();
+            }
+        }
         private void buttonDel_Click(object sender, EventArgs e)
         {
             try
@@ -100,6 +99,11 @@ namespace MFC
                 MessageBox.Show("невозможно удалить, эта запись используется!", "ошибка!",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBoxField_TextChanged(object sender, EventArgs e)
+        {
+
         }
     } 
 }

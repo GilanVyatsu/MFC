@@ -34,14 +34,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelFirst = new System.Windows.Forms.Label();
+            this.labelSecond = new System.Windows.Forms.Label();
+            this.labelThird = new System.Windows.Forms.Label();
+            this.labelFourth = new System.Windows.Forms.Label();
+            this.labelFifth = new System.Windows.Forms.Label();
+            this.labelSixth = new System.Windows.Forms.Label();
+            this.labelSeventh = new System.Windows.Forms.Label();
+            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
             // 
             // labelLink
@@ -92,88 +94,106 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(26, 265);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(357, 19);
+            this.label3.Size = new System.Drawing.Size(349, 19);
             this.label3.TabIndex = 10;
-            this.label3.Text = "10 главных вопросов о сервисе «Умный проезд»";
+            this.label3.Text = "7 главных вопросов о сервисе «Умный проезд»";
             // 
-            // label4
+            // labelFirst
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(27, 298);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(254, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Как работает сервис «Умный проезд»?";
+            this.labelFirst.AutoSize = true;
+            this.labelFirst.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFirst.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelFirst.Location = new System.Drawing.Point(27, 298);
+            this.labelFirst.Name = "labelFirst";
+            this.labelFirst.Size = new System.Drawing.Size(254, 17);
+            this.labelFirst.TabIndex = 11;
+            this.labelFirst.Text = "Как работает сервис «Умный проезд»?";
+            this.labelFirst.Click += new System.EventHandler(this.labeFirst_Click);
             // 
-            // label5
+            // labelSecond
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(27, 322);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(498, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Дает ли регистрация на платформе «Умные услуги» право льготного проезда?";
+            this.labelSecond.AutoSize = true;
+            this.labelSecond.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelSecond.Location = new System.Drawing.Point(27, 322);
+            this.labelSecond.Name = "labelSecond";
+            this.labelSecond.Size = new System.Drawing.Size(498, 17);
+            this.labelSecond.TabIndex = 12;
+            this.labelSecond.Text = "Дает ли регистрация на платформе «Умные услуги» право льготного проезда?";
+            this.labelSecond.Click += new System.EventHandler(this.labeSecond_Click);
             // 
-            // label6
+            // labelThird
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(26, 348);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(569, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Почему на некоторых билетах отображается QR-код, а на других — стоимость проезда?" +
+            this.labelThird.AutoSize = true;
+            this.labelThird.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelThird.Location = new System.Drawing.Point(26, 348);
+            this.labelThird.Name = "labelThird";
+            this.labelThird.Size = new System.Drawing.Size(569, 17);
+            this.labelThird.TabIndex = 13;
+            this.labelThird.Text = "Почему на некоторых билетах отображается QR-код, а на других — стоимость проезда?" +
     "";
+            this.labelThird.Click += new System.EventHandler(this.labeThird_Click);
             // 
-            // label7
+            // labelFourth
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(27, 374);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(575, 17);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Карты «Мир» часто не имеют функции бесконтактной оплаты. Что делать в этом случае" +
+            this.labelFourth.AutoSize = true;
+            this.labelFourth.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFourth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelFourth.Location = new System.Drawing.Point(27, 374);
+            this.labelFourth.Name = "labelFourth";
+            this.labelFourth.Size = new System.Drawing.Size(575, 17);
+            this.labelFourth.TabIndex = 14;
+            this.labelFourth.Text = "Карты «Мир» часто не имеют функции бесконтактной оплаты. Что делать в этом случае" +
     "?";
+            this.labelFourth.Click += new System.EventHandler(this.labeFourth_Click);
             // 
-            // label8
+            // labelFifth
             // 
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(26, 397);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(569, 38);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Как в рамках сервиса «Умный проезд» реализуется льготный проезд сопровождающих ли" +
+            this.labelFifth.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFifth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelFifth.Location = new System.Drawing.Point(26, 397);
+            this.labelFifth.Name = "labelFifth";
+            this.labelFifth.Size = new System.Drawing.Size(569, 38);
+            this.labelFifth.TabIndex = 15;
+            this.labelFifth.Text = "Как в рамках сервиса «Умный проезд» реализуется льготный проезд сопровождающих ли" +
     "ц, например, лиц, сопровождающих детей-инвалидов?";
+            this.labelFifth.Click += new System.EventHandler(this.labeFifth_Click);
             // 
-            // label9
+            // labelSixth
             // 
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(26, 437);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(569, 41);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Где можно получить информацию о работе сервиса «Умный проезд» и возможности его п" +
+            this.labelSixth.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSixth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelSixth.Location = new System.Drawing.Point(26, 437);
+            this.labelSixth.Name = "labelSixth";
+            this.labelSixth.Size = new System.Drawing.Size(569, 41);
+            this.labelSixth.TabIndex = 16;
+            this.labelSixth.Text = "Где можно получить информацию о работе сервиса «Умный проезд» и возможности его п" +
     "одключения?";
+            this.labelSixth.Click += new System.EventHandler(this.labeSixth_Click);
             // 
-            // label10
+            // labelSeventh
             // 
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(26, 475);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(576, 38);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Какие документы нужны для регистрации в платформе «Умные услуги» и где можно заре" +
+            this.labelSeventh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSeventh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.labelSeventh.Location = new System.Drawing.Point(26, 475);
+            this.labelSeventh.Name = "labelSeventh";
+            this.labelSeventh.Size = new System.Drawing.Size(576, 38);
+            this.labelSeventh.TabIndex = 8;
+            this.labelSeventh.Text = "Какие документы нужны для регистрации в платформе «Умные услуги» и где можно заре" +
     "гистрироваться?";
+            this.labelSeventh.Click += new System.EventHandler(this.labelSeventh_Click);
+            // 
+            // pictureBoxExit
+            // 
+            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
+            this.pictureBoxExit.Location = new System.Drawing.Point(623, 9);
+            this.pictureBoxExit.Name = "pictureBoxExit";
+            this.pictureBoxExit.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxExit.TabIndex = 20;
+            this.pictureBoxExit.TabStop = false;
+            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
             // FormSmart
             // 
@@ -181,20 +201,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(661, 622);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBoxExit);
+            this.Controls.Add(this.labelSeventh);
+            this.Controls.Add(this.labelSixth);
+            this.Controls.Add(this.labelFifth);
+            this.Controls.Add(this.labelFourth);
+            this.Controls.Add(this.labelThird);
+            this.Controls.Add(this.labelSecond);
+            this.Controls.Add(this.labelFirst);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSmart";
             this.Text = "FormSmart";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,12 +230,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelFirst;
+        private System.Windows.Forms.Label labelSecond;
+        private System.Windows.Forms.Label labelThird;
+        private System.Windows.Forms.Label labelFourth;
+        private System.Windows.Forms.Label labelFifth;
+        private System.Windows.Forms.Label labelSixth;
+        private System.Windows.Forms.Label labelSeventh;
+        private System.Windows.Forms.PictureBox pictureBoxExit;
     }
 }

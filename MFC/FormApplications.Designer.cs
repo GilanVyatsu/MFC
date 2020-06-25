@@ -43,12 +43,12 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxAppointment = new System.Windows.Forms.TextBox();
             this.labelField = new System.Windows.Forms.Label();
             this.textBoxField = new System.Windows.Forms.TextBox();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -184,6 +184,11 @@
             this.columnHeader4.Text = "Заявка";
             this.columnHeader4.Width = 93;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Выездное обслуживание";
+            this.columnHeader5.Width = 140;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -225,11 +230,7 @@
             this.textBoxField.Name = "textBoxField";
             this.textBoxField.Size = new System.Drawing.Size(135, 20);
             this.textBoxField.TabIndex = 16;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Выездное обслуживание";
-            this.columnHeader5.Width = 140;
+            this.textBoxField.TextChanged += new System.EventHandler(this.textBoxField_TextChanged);
             // 
             // FormApplications
             // 

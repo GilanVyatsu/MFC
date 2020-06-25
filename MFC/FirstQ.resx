@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Новый сервис позволяет использовать банковскую карту любого банка платежной системы «Мир» для оплаты льготного проезда в общественном транспорте. Перевозчик по электронным каналам связи направляет запрос банку о списании со счета полной стоимости проезда. Банк, прежде чем списать деньги с карты, запросит у ГИС «Умные услуги» информацию о наличии у пассажира льготного статуса, чтобы списать сумму с учетом льготы гражданина. Плюсы очевидны – база данных граждан остается в органах государственной власти, гражданам для получения возможности пользоваться правом льготного проезда не нужно обращаться в различные инстанции для получения специальных карт.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

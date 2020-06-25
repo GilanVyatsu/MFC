@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Все современные карты национальной платежной системы «Мир» оснащены сервисом бесконтактной оплаты. Если по какой-то причине сервис не работает, необходимо обратиться в банк, выпустивший карту, с просьбой о ее перевыпуске. Это будет сделано бесплатно, в том числе в досрочном порядке. Если на карте не отображен символ, указывающий на наличие бесконтактной оплаты, то по истечению срока действия такую карту также можно будет бесплатно обменять на современную.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBoxExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

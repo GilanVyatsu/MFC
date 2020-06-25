@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,11 @@ namespace MFC
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonResponsibility_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://моидокументы43.рф/uslugi/liability/");
         }
     }
 }

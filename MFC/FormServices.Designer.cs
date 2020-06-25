@@ -34,6 +34,7 @@
             this.buttonSmart = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
+            this.buttonResponsibility = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,12 +94,26 @@
             this.pictureBoxExit.TabStop = false;
             this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
+            // buttonResponsibility
+            // 
+            this.buttonResponsibility.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.buttonResponsibility.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonResponsibility.ForeColor = System.Drawing.Color.White;
+            this.buttonResponsibility.Location = new System.Drawing.Point(154, 168);
+            this.buttonResponsibility.Name = "buttonResponsibility";
+            this.buttonResponsibility.Size = new System.Drawing.Size(147, 51);
+            this.buttonResponsibility.TabIndex = 22;
+            this.buttonResponsibility.Text = "Ответсвенность";
+            this.buttonResponsibility.UseVisualStyleBackColor = false;
+            this.buttonResponsibility.Click += new System.EventHandler(this.buttonResponsibility_Click);
+            // 
             // FormServices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(480, 318);
+            this.Controls.Add(this.buttonResponsibility);
             this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonSmart);
@@ -120,5 +135,6 @@
         private System.Windows.Forms.Button buttonSmart;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBoxExit;
+        private System.Windows.Forms.Button buttonResponsibility;
     }
 }

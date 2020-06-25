@@ -61,6 +61,18 @@
     <Compile Include="Contacts.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
+    <Compile Include="FifthQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FifthQ.Designer.cs">
+      <DependentUpon>FifthQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstQ.Designer.cs">
+      <DependentUpon>FirstQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFizLico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +199,12 @@
     <Compile Include="FormUrLico.Designer.cs">
       <DependentUpon>FormUrLico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FourthQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FourthQ.Designer.cs">
+      <DependentUpon>FourthQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jobs.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
@@ -213,12 +231,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondQ.Designer.cs">
+      <DependentUpon>SecondQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SeventhQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeventhQ.Designer.cs">
+      <DependentUpon>SeventhQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SixthQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SixthQ.Designer.cs">
+      <DependentUpon>SixthQ.cs</DependentUpon>
     </Compile>
     <Compile Include="Smart.cs">
       <DependentUpon>ModelMFC.tt</DependentUpon>
     </Compile>
+    <Compile Include="ThirdQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThirdQ.Designer.cs">
+      <DependentUpon>ThirdQ.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FifthQ.resx">
+      <DependentUpon>FifthQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstQ.resx">
+      <DependentUpon>FirstQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormApplications.resx">
       <DependentUpon>FormApplications.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +330,9 @@
     <EmbeddedResource Include="FormVremaProstora.resx">
       <DependentUpon>FormVremaProstora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FourthQ.resx">
+      <DependentUpon>FourthQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -291,6 +342,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SecondQ.resx">
+      <DependentUpon>SecondQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeventhQ.resx">
+      <DependentUpon>SeventhQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SixthQ.resx">
+      <DependentUpon>SixthQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdQ.resx">
+      <DependentUpon>ThirdQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="ModelMFC.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelMFC.Designer.cs</LastGenOutput>
