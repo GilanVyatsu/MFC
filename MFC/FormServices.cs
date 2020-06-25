@@ -29,12 +29,6 @@ namespace MFC
             Form formSmart = new FormSmart();
             formSmart.Show();
         }
-
-        private void pictureBoxExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void buttonResponsibility_Click(object sender, EventArgs e)
         {
             Process.Start("https://моидокументы43.рф/uslugi/liability/");

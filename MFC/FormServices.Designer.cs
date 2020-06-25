@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormServices));
             this.label1 = new System.Windows.Forms.Label();
             this.buttonPaid = new System.Windows.Forms.Button();
             this.buttonSmart = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.buttonResponsibility = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,17 +80,6 @@
             this.panel1.Size = new System.Drawing.Size(482, 73);
             this.panel1.TabIndex = 3;
             // 
-            // pictureBoxExit
-            // 
-            this.pictureBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExit.Image")));
-            this.pictureBoxExit.Location = new System.Drawing.Point(442, 12);
-            this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxExit.TabIndex = 21;
-            this.pictureBoxExit.TabStop = false;
-            this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
-            // 
             // buttonResponsibility
             // 
             this.buttonResponsibility.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -114,15 +100,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(480, 318);
             this.Controls.Add(this.buttonResponsibility);
-            this.Controls.Add(this.pictureBoxExit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonSmart);
             this.Controls.Add(this.buttonPaid);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormServices";
             this.Text = "Услуги";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,7 +117,6 @@
         private System.Windows.Forms.Button buttonPaid;
         private System.Windows.Forms.Button buttonSmart;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBoxExit;
         private System.Windows.Forms.Button buttonResponsibility;
     }
 }
