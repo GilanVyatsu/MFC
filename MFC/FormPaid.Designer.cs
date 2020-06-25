@@ -123,7 +123,7 @@
             // labelLink
             // 
             this.labelLink.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelLink.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.labelLink.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.labelLink.Location = new System.Drawing.Point(25, 27);
             this.labelLink.Name = "labelLink";
             this.labelLink.Size = new System.Drawing.Size(302, 62);
