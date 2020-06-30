@@ -17,17 +17,6 @@ namespace MFC
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBoxFB_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.facebook.com/mfckirov43/");

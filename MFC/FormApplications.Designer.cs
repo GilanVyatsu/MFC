@@ -49,6 +49,7 @@
             this.textBoxAppointment = new System.Windows.Forms.TextBox();
             this.labelField = new System.Windows.Forms.Label();
             this.textBoxField = new System.Windows.Forms.TextBox();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -149,7 +150,8 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader6});
             this.listViewApplications.ForeColor = System.Drawing.Color.Black;
             this.listViewApplications.FullRowSelect = true;
             this.listViewApplications.GridLines = true;
@@ -166,28 +168,28 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Имя";
-            this.columnHeader1.Width = 108;
+            this.columnHeader1.Text = "id";
+            this.columnHeader1.Width = 0;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Фамилия";
+            this.columnHeader2.Text = "Имя";
             this.columnHeader2.Width = 114;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Отчество";
+            this.columnHeader3.Text = "Фамилия";
             this.columnHeader3.Width = 104;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Заявка";
+            this.columnHeader4.Text = "Отчество";
             this.columnHeader4.Width = 93;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Выездное обслуживание";
-            this.columnHeader5.Width = 140;
+            this.columnHeader5.Text = "Заявка";
+            this.columnHeader5.Width = 102;
             // 
             // panel1
             // 
@@ -226,11 +228,15 @@
             // 
             // textBoxField
             // 
-            this.textBoxField.Location = new System.Drawing.Point(24, 317);
+            this.textBoxField.Location = new System.Drawing.Point(24, 316);
             this.textBoxField.Name = "textBoxField";
             this.textBoxField.Size = new System.Drawing.Size(135, 20);
             this.textBoxField.TabIndex = 16;
-            this.textBoxField.TextChanged += new System.EventHandler(this.textBoxField_TextChanged);
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Выездное обслуживание";
+            this.columnHeader6.Width = 146;
             // 
             // FormApplications
             // 
@@ -282,5 +288,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label labelField;
         private System.Windows.Forms.TextBox textBoxField;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }
